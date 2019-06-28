@@ -1,0 +1,98 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  min-width: 47.5rem;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.8rem;
+  color: white;
+}
+
+.Card-text {
+  margin: 2rem auto;
+  padding: 1rem 0.5rem;
+}
+
+.Title {
+  margin: 0.5rem 0;
+  font-weight: 300;
+}
+
+.Author {
+  margin: 0 auto;
+  font-weight: 200;
+}
+
+.Display-form {
+  width: 50rem;
+  padding: 2rem 1.5rem;
+  height: 35rem;
+  margin: 5rem auto;
+}
+.Form {
+  margin: 3rem auto;
+}
+
+.Wrapper {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.Modal-wrapper {
+  background: rgba(37, 34, 34, 0.85);
+  display: block;
+  /* height: 100vh; */
+  height: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.5s ease-in;
+}
+
+.Modal-center {
+  height: 60rem;
+  border: 1px solid gainsboro;
+  width: 50rem;
+  margin: 5rem auto;
+  /* background: rgba(37, 34, 34, 0.97); */
+  background: linear-gradient(
+    to bottom right,
+    rgba(190, 40, 80, 1),
+    rgba(88, 78, 236, 1)
+  );
+  border-radius: 0.7rem;
+  padding: 1.5rem 1rem;
+}
+
+.Data-row {
+  display: inline-block;
+}
+
+@media (max-width: 40rem) {
+  .Modal-center {
+    width: 90%;
+    margin: 2rem auto;
+  }
+
+  .Display-form {
+    width: 30rem;
+  }
+}
+
+.svg-icon-close {
+  width: 10rem;
+  margin: 7rem auto 0 auto;
+}
