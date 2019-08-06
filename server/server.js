@@ -29,7 +29,7 @@ server.get("/api/weather/:lat/:long", async function(req, res, next) {
   try {
     let response = await makeRequest(url);
     response = JSON.parse(response, null, 2);
-    res.send(response.currently);
+    res.json(response.currently);
     next();
   } catch (error) {
     res.send({ error: error.message });
