@@ -3,8 +3,10 @@ const restify = require("restify");
 const server = restify.createServer();
 const bodyParser = require("body-parser");
 const port = process.env.port || 9000;
+
 let darkskyUrl =
   "https://api.darksky.net/forecast/5f92cde30212ee856099ea49f362a583/";
+
 server.use(bodyParser.urlencoded({ extended: true }));
 server.use(bodyParser.json());
 
