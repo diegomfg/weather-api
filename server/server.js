@@ -36,6 +36,10 @@ server.get("/api/weather/:lat/:long", async function(req, res, next) {
   }
 });
 
+server.get("*", (req, res) => {
+  res.write("<pre>All requests are made to /api/weather/:lat/:long</pre>");
+});
+
 server.listen(port, () => {
   console.log(`Restify server running at port ${port}`);
 });
