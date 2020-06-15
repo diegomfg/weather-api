@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run start-prod`
+
+Runs the app in a fake production mode.
+Starts the React app in port 3000 at your localhost, and starts the NodeJs server at port 9000.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>

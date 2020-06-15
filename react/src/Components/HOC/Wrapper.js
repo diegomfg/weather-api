@@ -8,10 +8,17 @@ const Wrapper = styled.div`
 `;
 
 const RenderWrapper = props => {
+
+  let city = "Miami Florida";
+
   const fetchData = event => {
     event.preventDefault();
     props.fetchGeolocation();
   };
+
+  const onCityChange = (e) => {
+      props.setCity(e.target.value);
+  }
 
   return (
     <Wrapper>
@@ -21,7 +28,7 @@ const RenderWrapper = props => {
           <small className="Author">Author: Diego Matheus</small>
         </div>
         <form onSubmit={event => fetchData(event)} className="Form">
-          <Input placeholder="Miami Florida" id="input" />
+          <Input placeholder={city} id="input" onChange={onCityChange} defaultvalue={city}/>
           <Button>Fetch Data</Button>
         </form>
       </div>

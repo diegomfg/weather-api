@@ -23,7 +23,7 @@ const ModalInner = props => {
       <img
         src="https://image.flaticon.com/icons/svg/61/61155.svg"
         alt="close icon"
-        class="svg-icon-close"
+        className="svg-icon-close"
         onClick={props.toggleModal}
       />
     </article>
