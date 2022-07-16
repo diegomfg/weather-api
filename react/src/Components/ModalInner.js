@@ -19,13 +19,8 @@ const ModalInner = props => {
         <RowData>
           Precipitation Probability: {props.data.precipProbability}%
         </RowData>
+        <p>Click anywhere to exit</p>
       </div>
-      <img
-        src="https://image.flaticon.com/icons/svg/61/61155.svg"
-        alt="close icon"
-        className="svg-icon-close"
-        onClick={props.toggleModal}
-      />
     </article>
   );
 };

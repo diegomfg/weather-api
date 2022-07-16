@@ -10,7 +10,7 @@ const Modal = styled.div`
 
 const ModalRender = props => {
   return (
-    <Modal className="Modal">
+    <Modal className="Modal" onClick={props.toggleModal}>
       <ModalInner
         data={props.data}
         city={props.city}
